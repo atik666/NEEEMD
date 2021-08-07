@@ -1,8 +1,8 @@
 % y=xlsread('some.data');       % load a signal.
-% num_IMF = 5;                      % numbers of IMF
+% num_IMF = 5;                  % numbers of IMF
 % NR = 10;                      % value of ensemble
-% Nstd = 0.3;                   % param to white noise
-% 
+% NstdMax = 0.2;                % upper bound
+% NstdMin = 0.1                 % lower bound
 % IMF1=eemd(y,num_IMF,NR,Nstd);
 
 function [Fimfs, residual] = neeemd(y, num_IMF, NR, NstdMax, NstdMin)
